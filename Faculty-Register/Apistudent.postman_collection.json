@@ -1,0 +1,394 @@
+{
+	"info": {
+		"_postman_id": "53fa72af-c643-4342-989c-597bc004a230",
+		"name": "Apistudent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24332441"
+	},
+	"item": [
+		{
+			"name": "StudentinsertData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "kishan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kishan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "7698385343",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7698385343",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Surat",
+							"type": "text"
+						},
+						{
+							"key": "course",
+							"value": "GIM",
+							"type": "text"
+						},
+						{
+							"key": "fees",
+							"value": "105000",
+							"type": "text"
+						},
+						{
+							"key": "F_id",
+							"value": "637dcd68b87600651e97d201",
+							"type": "text"
+						},
+						{
+							"key": "F_name",
+							"value": "lino",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/studentadmin/insertData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"studentadmin",
+						"insertData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Studentlogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "kishan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "7698385343",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/studentadmin/logidata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"studentadmin",
+						"logidata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addcategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "lino",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/studentadmin/addcategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"studentadmin",
+						"addcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewsubcategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9651/studentadmin/viewsubcategory?id=637dbf2a555920585c4c7a8e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"studentadmin",
+						"viewsubcategory"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "637dbf2a555920585c4c7a8e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewstudent",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdkY2Q4MmI4NzYwMDY1MWU5N2QyMDMiLCJTX25hbWUiOiJraXNoYW4iLCJTX2VtYWlsIjoia2lzaGFuQGdtYWlsLmNvbSIsIlNfcGFzc3dvcmQiOiI3Njk4Mzg1MzQzIiwiU19waG9uZSI6NzY5ODM4NTM0MywiU19jaXR5IjoiU3VyYXQiLCJTX2NvdXJzZSI6IkdJTSIsIlNfZmVlcyI6MTA1MDAwLCJGX2lkIjoiNjM3ZGNkNjhiODc2MDA2NTFlOTdkMjAxIiwiRl9uYW1lIjoibGlubyIsIl9fdiI6MCwiaWF0IjoxNjY5MTg5NzgyLCJleHAiOjE2NzI3ODk3ODJ9.N37We7zctlLz0DrKrZGdnft8YlcXUH2gdabevQuKNPo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:9651/studentadmin/viewstudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"studentadmin",
+						"viewstudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profileupdate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdkY2Q4MmI4NzYwMDY1MWU5N2QyMDMiLCJTX25hbWUiOiJraXNoYW4iLCJTX2VtYWlsIjoia2lzaGFuQGdtYWlsLmNvbSIsIlNfcGFzc3dvcmQiOiI3Njk4Mzg1MzQzIiwiU19waG9uZSI6NzY5ODM4NTM0MywiU19jaXR5IjoiU3VyYXQiLCJTX2NvdXJzZSI6IkdJTSIsIlNfZmVlcyI6MTA1MDAwLCJGX2lkIjoiNjM3ZGNkNjhiODc2MDA2NTFlOTdkMjAxIiwiRl9uYW1lIjoibGlubyIsIl9fdiI6MCwiaWF0IjoxNjY5MTg5NzgyLCJleHAiOjE2NzI3ODk3ODJ9.N37We7zctlLz0DrKrZGdnft8YlcXUH2gdabevQuKNPo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "kishan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kishan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "7698385352",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7698385352",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Surat",
+							"type": "text"
+						},
+						{
+							"key": "course",
+							"value": "GIM",
+							"type": "text"
+						},
+						{
+							"key": "fees",
+							"value": "105000",
+							"type": "text"
+						},
+						{
+							"key": "F_id",
+							"value": "637dcd68b87600651e97d201",
+							"type": "text"
+						},
+						{
+							"key": "F_name",
+							"value": "lino",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/studentadmin/profileupdate?id=637dcd82b87600651e97d203",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"studentadmin",
+						"profileupdate"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "637dcd82b87600651e97d203"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgetpass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jenishmangukiya800@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/studentadmin/forgetpass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"studentadmin",
+						"forgetpass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "otp",
+							"value": "536633",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/studentadmin/otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"studentadmin",
+						"otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newpassdata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newpassword",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "cpassword",
+							"value": "1234567890",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/studentadmin/newpassdata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"studentadmin",
+						"newpassdata"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "17bc02f0-d748-465b-9046-5214712a19c5",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24332441"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Vivek",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "naliyadravivek282@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "7203874378",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7203874378",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "Animation",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Dubai",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/admin/insertData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"admin",
+						"insertData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logidatatoken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "kishanaravadiya6820@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "KishanAravadiya6820",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/admin/logidata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"admin",
+						"logidata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profileupdate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "63773e8f56fbadd48a8d8d48",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "kishan aravdiya",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kishanaravadiya6820@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "KishanAravadiya6820",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7698385344",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "node js sir",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Surat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/admin/profileupdate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"admin",
+						"profileupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgetpass",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzc3M2U4ZjU2ZmJhZGQ0OGE4ZDhkNDgiLCJGX25hbWUiOiJraXNoYW4gYXJhdmRpeWEiLCJGX2VtYWlsIjoia2lzaGFuYXJhdmFkaXlhNjgyMEBnbWFpbC5jb20iLCJGX3Bhc3N3b3JkIjoiS2lzaGFuQXJhdmFkaXlhNjgyMCIsIkZfcGhvbmUiOjc2OTgzODUzNDMsIkZfZGVzaWduYXRpb24iOiJub2RlIGpzIHNpciIsIkZfY2l0eSI6IlN1cmF0IiwiX192IjowLCJpYXQiOjE2NjkwOTc3NjQsImV4cCI6MTY3MjY5Nzc2NH0.ROwDHgjnqjuseQufgYyn4bUF8PkdO7cwmIYpDk2qW60",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "naliyadravivek282@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/admin/forgetpass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"admin",
+						"forgetpass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "otp",
+							"value": "439290",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/admin/otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"admin",
+						"otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Newpassdata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newpassword",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "cpassword",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9651/admin/newpassdata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9651",
+					"path": [
+						"admin",
+						"newpassdata"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
